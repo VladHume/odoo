@@ -38,5 +38,6 @@
         <field name="paperformat_id" ref="iot_certification.paperformat_no_hf"/>
         <field name="binding_model_id" eval="False"/>
         <field name="binding_type">report</field>
+        <field name="attachment">"certification_application_report_" + object.name</field>
     </record>
 </odoo>

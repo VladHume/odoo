@@ -39,6 +39,7 @@
             file="iot_certification.report_template"
             paperformat="paperformat_payslip_group"
             menu="False"
+            attachment="'certification_report_' + object.name"
         />
 
     </data>
