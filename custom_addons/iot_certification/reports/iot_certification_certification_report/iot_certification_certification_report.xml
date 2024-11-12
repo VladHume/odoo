@@ -23,7 +23,7 @@
 
 
     <template id="certification_layout">
-        <div class="article">
+        <div class="article" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id">
             <t t-out="0"/>
         </div>
     </template>
@@ -89,5 +89,6 @@
         <field name="paperformat_id" ref="iot_certification.certification_paperformat"/>
         <field name="binding_model_id" eval="True"/>
         <field name="binding_type">report</field>
+        <field name="attachment">"certification_certificate_report_" + object.certificate_name</field>
     </record>
 </odoo>
